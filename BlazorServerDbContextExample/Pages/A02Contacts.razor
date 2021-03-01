@@ -1,0 +1,15 @@
+﻿@page "/A02"
+@page "/A02/{Page:int}"
+
+@inherits NS002.A02ContactsBase
+
+
+
+<WrapperV7 @ref="Wrapper" FilterChanged="ReloadAsync" TITLE="@TITLE" Adapter="Adapter"
+           PageHelper="PageHelper">
+
+
+    <TableCompV7 Adapter="Adapter"  Items="Items" PageHelper="PageHelper" />
+
+</WrapperV7>
+
